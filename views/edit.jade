@@ -1,0 +1,19 @@
+html
+  body
+    #container_demo
+      // hidden anchor to stop jump http://www.css3create.com/Astuce-Empecher-le-scroll-avec-l-utilisation-de-target#wrap4
+      a#toregister.hiddenanchor
+      a#tologin.hiddenanchor
+        #register.animate.form
+          form(action='/update/'+todos._id+'', autocomplete='on',method='POST')
+            h4  Create User
+            p
+              label.youmail(for='emailsignup', data-icon='e') Name
+              input#emailsignup(name='name', required='required', type='text',autocomplete="off" ,value= todos.name)
+            p
+              label.youmail(for='emailsignup', data-icon='e')      Your email
+              input#emailsignup(name='emailsignup', required='required', type='email',autocomplete="off",value= todos.email)              
+            p.signin.button
+              input(type='submit', value='Update')
+            p.change_link
+            

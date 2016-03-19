@@ -1,0 +1,18 @@
+html
+  body
+    #container_demo
+        #register.animate.form
+          form(action='create', autocomplete='on',method='POST')
+            h1  Create
+            p
+              label.youmail(for='emailsignup', data-icon='e')      Your email
+              input#emailsignup(name='emailsignup', required='required', type='email' )
+            p
+              label.youpasswd(for='passwordsignup', data-icon='p') Your password 
+              input#passwordsignup(name='passwordsignup', required='required', type='password')
+            p
+              label.youpasswd(for='passwordsignup_confirm', data-icon='p') Confirm Password 
+              input#passwordsignup_confirm(name='passwordsignup_confirm', required='required', type='password')
+            p.signin.button
+              input(type='submit', value='Create')
+           
